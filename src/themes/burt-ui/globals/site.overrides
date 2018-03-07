@@ -1,3 +1,11 @@
 /*******************************
         Global Overrides
+
 *******************************/
+
+@colorPrimary:#6D849A;
+@colorSecondary:#485867;
+@border:1px solid #CAD1DB;
+
+
+

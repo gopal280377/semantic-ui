@@ -20,6 +20,8 @@
 @googleProtocol    : 'https://';
 @googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
 
+
+
 /*-------------------
       Base Sizes
 --------------------*/
@@ -47,8 +49,8 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @black;
+@primaryColor        : #0078FF;
+@secondaryColor      : #CAD0DB;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -64,7 +66,7 @@
 @h2 : unit((24 / 14), rem);
 @h3 : unit((18 / 14), rem);
 @h4 : unit((15 / 14), rem);
-@h5 : unit((14 / 14), rem);
+@h5 : unit((12 / 14), rem);
 
 /*--------------
    Form Input
@@ -89,7 +91,7 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: #85B7D9;
+/* @focusedFormBorderColor: #85B7D9; */ 
 
 /* Used on dropdowns, other larger blocks */
 @focusedFormMutedBorderColor: #96C8DA;
@@ -110,7 +112,7 @@
 @largeSize       : (16 / 14);
 @bigSize         : (18 / 14);
 @hugeSize        : (20 / 14);
-@massiveSize     : (24 / 14);
+@massiveSize     : (20 / 14); 
 
 
 /*-------------------
@@ -134,7 +136,7 @@
        Links
 --------------------*/
 
-@linkColor           : #4183C4;
+@linkColor           : #5A6B7A;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -216,35 +218,36 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@red              : #DB2828;
-@orange           : #F2711C;
-@yellow           : #FBBD08;
-@olive            : #B5CC18;
-@green            : #21BA45;
-@teal             : #00B5AD;
-@blue             : #2185D0;
-@violet           : #6435C9;
-@purple           : #A333C8;
-@pink             : #E03997;
-@brown            : #A5673F;
-@grey             : #767676;
-@black            : #1B1C1D;
+@red              : #E42653;
+@orange           : #FA6721;
+@yellow           : #F9D02E;
+@olive            : #A9E01E;
+@green            : #19C815;
+@neon             : #85CED7;
+@teal             : #55ACEE;
+@blue             : #3B5998;
+@violet           : #9012FE;
+@purple           : #A23BC5;
+@pink             : #EB5DAB;
+@brown            : #DE924E;
+@grey             : #828A92;
+@black            : #000000;
 
 /*---  Light Colors  ---*/
-@lightRed         : #FF695E;
-@lightOrange      : #FF851B;
-@lightYellow      : #FFE21F;
-@lightOlive       : #D9E778;
-@lightGreen       : #2ECC40;
-@lightTeal        : #6DFFFF;
-@lightBlue        : #54C8FF;
-@lightViolet      : #A291FB;
-@lightPurple      : #DC73FF;
-@lightPink        : #FF8EDF;
-@lightBrown       : #D67C1C;
-@lightGrey        : #DCDDDE;
+@lightRed         : lighten(@red, 5);
+@lightOrange      : lighten(@orange, 5);
+@lightYellow      : lighten(@yellow, 5);
+@lightOlive       : lighten(@olive, 5);
+@lightGreen       : lighten(@green, 5);
+@lightTeal        : lighten(@teal, 5);
+@lightBlue        : lighten(@blue, 5);
+@lightViolet      : lighten(@violet, 5);
+@lightPurple      : lighten(@purple, 5);
+@lightPink        : lighten(@pink, 5);
+@lightBrown       : lighten(@brown, 5);
+@lightGrey        : lighten(@grey, 5);
 @lightBlack       : #545454;
-
+ 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
 @offWhite         : #F9FAFB;
@@ -253,17 +256,19 @@
 @white            : #FFFFFF;
 
 /*--- Colored Backgrounds ---*/
-@redBackground    : #FFE8E6;
-@orangeBackground : #FFEDDE;
-@yellowBackground : #FFF8DB;
-@oliveBackground  : #FBFDEF;
-@greenBackground  : #E5F9E7;
-@tealBackground   : #E1F7F7;
-@blueBackground   : #DFF0FF;
-@violetBackground : #EAE7FF;
-@purpleBackground : #F6E7FF;
-@pinkBackground   : #FFE3FB;
-@brownBackground  : #F1E2D3;
+@redBackground    : #E42653;
+@orangeBackground : #FA6721;
+@yellowBackground : #F9D02E;
+@oliveBackground  : #A9E01E;
+@greenBackground  : #19C815;
+@neonBackground   : #85CED7;
+@tealBackground   : #55ACEE;
+@blueBackground   : #3B5998;
+@violetBackground : #9012FE;
+@purpleBackground : #A23BC5;
+@pinkBackground   : #EB5DAB;
+@brownBackground  : #DE924E;
+@greyBackground   : #828A92;
 
 /*--- Colored Headers ---*/
 @redHeaderColor    : darken(@redTextColor, 5);
@@ -343,14 +348,14 @@
 --------------------*/
 
 /* Positive */
-@positiveColor           : @green;
-@positiveBackgroundColor : #FCFFF5;
-@positiveBorderColor     : #A3C293;
-@positiveHeaderColor     : #1A531B;
-@positiveTextColor       : #2C662D;
+@positiveColor           : #1FD31A;
+@positiveBackgroundColor : #1FD31A;
+@positiveBorderColor     : #1FD31A;
+@positiveHeaderColor     : #1FD31A;
+@positiveTextColor       : #FFFFFF;
 
 /* Negative */
-@negativeColor           : @red;
+@negativeColor           : #F72758;
 @negativeBackgroundColor : #FFF6F6;
 @negativeBorderColor     : #E0B4B4;
 @negativeHeaderColor     : #912D2B;
@@ -375,8 +380,8 @@
 --------------------*/
 
 /* For source only. Modified in gulp for dist */
-@imagePath : '../../themes/default/assets/images';
-@fontPath  : '../../themes/default/assets/fonts';
+@imagePath : '../../themes/burt-ui/assets/images';
+@fontPath  : '../../themes/burt-ui/assets/fonts';
 
 /*-------------------
        Em Sizes
@@ -731,7 +736,7 @@
 ;
 
 /*---  Colors  ---*/
-@primaryColorHover    : saturate(darken(@primaryColor, 5), 10, relative);
+@primaryColorHover    : saturate(lighten(@primaryColor, 5), 10, relative);
 @secondaryColorHover  : saturate(lighten(@secondaryColor, 5), 10, relative);
 
 @redHover             : saturate(darken(@red, 5), 10, relative);
@@ -908,7 +913,7 @@
 
 /*---  Colors  ---*/
 @primaryColorActive    : saturate(darken(@primaryColor, 5), 15, relative);
-@secondaryColorActive  : saturate(lighten(@secondaryColor, 5), 15, relative);
+@secondaryColorActive  : saturate(darken(@secondaryColor, 5), 15, relative);
 
 @redActive             : saturate(darken(@red, 5), 15, relative);
 @orangeActive          : saturate(darken(@orange, 5), 15, relative);
