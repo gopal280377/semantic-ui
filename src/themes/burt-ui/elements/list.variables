@@ -56,14 +56,14 @@
 @itemHeaderColor: @textColor;
 
 /* Description */
-@itemDescriptionColor: rgba(0, 0, 0, 0.7);
+@itemDescriptionColor: #666;
 
 /* Link */
 @itemLinkColor: @linkColor;
 @itemLinkHoverColor: @linkHoverColor;
 
 /* Header Link */
-@itemHeaderLinkColor: @itemLinkColor;
+@itemHeaderLinkColor: #000;
 @itemHeaderLinkHoverColor: @itemLinkHoverColor;
 
 /* Linked Icon */

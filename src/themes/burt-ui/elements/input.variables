@@ -68,25 +68,26 @@
 @placeholderFocusColor: @inputPlaceholderFocusColor;
 
 /* Down */
-@downBorderColor: rgba(0, 0, 0, 0.3);
+@downBorderColor: rgba(0, 0, 0, 0.3); 
 @downBackground: #FAFAFA;
 @downColor: @textColor;
 @downBoxShadow: none;
 
+
 /* Focus */
-@focusBorderColor: @focusedFormBorderColor;
+@focusBorderColor: 1px solid rgba(34, 36, 38, 0.15);
 @focusBackground: @background;
 @focusColor: @hoveredTextColor;
 @focusBoxShadow: none;
 
 /* Error */
-@errorBackground: @negativeBackgroundColor;
-@errorColor: @negativeTextColor;
-@errorBorder: @negativeBorderColor;
+@errorBackground: @inputBackground; 
+@errorColor: #FB436B;
+@errorBorder: #f72757;
 @errorBoxShadow: none;
 
-@placeholderErrorColor: lighten(@errorColor, 40);
-@placeholderErrorFocusColor: lighten(@errorColor, 30);
+@placeholderErrorColor: @errorColor;
+@placeholderErrorFocusColor: @errorColor;
 
 /* Loader */
 @invertedLoaderFillColor: rgba(0, 0, 0, 0.15);

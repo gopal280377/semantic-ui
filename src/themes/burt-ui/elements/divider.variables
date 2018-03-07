@@ -50,4 +50,4 @@
 @sectionMargin: 2rem;
 
 /* Sizes */
-@medium: 1rem;
+@medium: 0.71rem;

@@ -1,3 +1,15 @@
 /*******************************
          Theme Overrides
 *******************************/
+.card .ui.two.buttons > .button{
+	width:48%;
+}
+.card .ui.buttons:not(.vertical) > .basic.red.button:not(:first-child) {
+    margin-left: 10px;
+}
+.card .ui.buttons .button:last-child{
+	border-radius:0.28571429rem;
+}
+.card .ui.buttons .button:first-child{
+	border-radius:0.28571429rem;
+}

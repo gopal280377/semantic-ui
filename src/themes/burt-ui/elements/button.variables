@@ -9,14 +9,14 @@
 /* Button */
 @verticalMargin: 0em;
 @horizontalMargin: 0.25em;
-@backgroundColor: #E0E1E2;
+@backgroundColor: #d9d9d9;
 @backgroundImage: none;
 @background: @backgroundColor @backgroundImage;
 @lineHeight: 1em;
 
 /* Button defaults to using same height as input globally */
 @verticalPadding: @inputVerticalPadding;
-@horizontalPadding: 1.5em;
+@horizontalPadding: 2.90em;
 
 /* Text */
 @textTransform: none;
@@ -194,19 +194,19 @@
 /* Basic */
 @basicBorderRadius: @borderRadius;
 @basicBorderSize: 1px;
-@basicTextColor: @textColor;
+@basicTextColor: #666666;
 @basicColoredBorderSize: 1px;
 
 @basicBackground: transparent none;
 @basicFontWeight: normal;
-@basicBorder: 1px solid @borderColor;
+@basicBorder: 1px solid @basicTextColor;
 @basicBoxShadow: 0px 0px 0px @basicBorderSize @borderColor inset;
 @basicLoadingColor: @offWhite;
 @basicTextTransform: none;
 
 /* Basic Hover */
 @basicHoverBackground: #FFFFFF;
-@basicHoverTextColor: @hoveredTextColor;
+@basicHoverTextColor: darken(@basicTextColor, 15);
 @basicHoverBoxShadow:
   0px 0px 0px @basicBorderSize @selectedBorderColor inset,
   0px 0px 0px 0px @borderColor inset
@@ -224,7 +224,7 @@
   0px 1px 4px 0px @borderColor inset
 ;
 /* Basic Active */
-@basicActiveBackground: @transparentBlack;
+@basicActiveBackground: darken(@basicTextColor, 25);
 @basicActiveBoxShadow: '';
 @basicActiveTextColor: @selectedTextColor;
 
@@ -249,6 +249,9 @@
 /* Basic Group */
 @basicGroupBorder: @basicBorderSize solid @borderColor;
 @basicGroupBoxShadow: none;
+
+
+
 
 /*-------------------
       Variations
@@ -322,7 +325,7 @@
 @primaryBoxShadow: @coloredBoxShadow;
 
 @secondaryBackgroundImage: @coloredBackgroundImage;
-@secondaryTextColor: @invertedTextColor;
+@secondaryTextColor: #5A6B7A;
 @secondaryTextShadow: @invertedTextShadow;
 @secondaryBoxShadow: @coloredBoxShadow;
 

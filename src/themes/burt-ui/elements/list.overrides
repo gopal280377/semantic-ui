@@ -1,3 +1,6 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.list .list > .item .description, .ui.list > .item .description a{
+	color:#000;
+}
