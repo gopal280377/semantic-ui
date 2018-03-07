@@ -84,14 +84,14 @@
 
 /* Input Focus */
 @inputFocusBackground: @inputBackground;
-@inputFocusBorderColor: @focusedFormBorderColor;
+@inputFocusBorderColor: 1px solid rgba(34, 36, 38, 0.15);
 @inputFocusColor: @selectedTextColor;
 @inputFocusBoxShadow: @inputFocusPointerSize 0em 0em 0em @selectedBorderColor inset;
 @inputFocusBorderRadius: @inputBorderRadius;
 
 /* Text Area Focus */
-@textAreaFocusBackground: @inputFocusBackground;
-@textAreaFocusBorderColor: @inputFocusBorderColor;
+@textAreaFocusBackground: @inputBackground;
+@textAreaFocusBorderColor: 1px solid rgba(34, 36, 38, 0.15);
 @textAreaFocusColor: @inputFocusColor;
 @textAreaFocusBoxShadow: @inputFocusBoxShadow;
 @textAreaFocusBorderRadius: @inputFocusBorderRadius;
@@ -100,9 +100,9 @@
 @disabledLabelOpacity: @disabledOpacity;
 
 /* Errored Input */
-@formErrorColor: @negativeTextColor;
-@formErrorBorder: @negativeBorderColor;
-@formErrorBackground: @negativeBackgroundColor;
+@formErrorColor: #FB436B;
+@formErrorBorder: #f72757;
+@formErrorBackground: @inputBackground;
 
 /* AutoFill */
 @inputAutoFillBackground: #FFFFF0;
@@ -125,14 +125,14 @@
 @dropdownErrorLabelColor: @errorTextColor;
 
 /* Focused Error */
-@inputErrorFocusBackground: @negativeBackgroundColor;
-@inputErrorFocusColor: @negativeTextColor;
-@inputErrorFocusBorder: @negativeBorderColor;
+@inputErrorFocusBackground: @inputBackground;
+@inputErrorFocusColor: #FB436B;
+@inputErrorFocusBorder: #f72757;
 @inputErrorFocusBoxShadow: none;
 
 /* Placeholder Error */
-@inputErrorPlaceholderColor: lighten(@formErrorColor, 40);
-@inputErrorPlaceholderFocusColor: lighten(@formErrorColor, 30);
+@inputErrorPlaceholderColor: @inputErrorFocusColor;
+@inputErrorPlaceholderFocusColor: @inputErrorFocusBorder;
 
 /* Loading Dimmer */
 @loaderDimmerColor: rgba(255, 255, 255, 0.8);

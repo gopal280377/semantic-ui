@@ -9,13 +9,13 @@
 --------------------*/
 
 @verticalMargin: 1em;
-@verticalPadding: 1em;
-@horizontalPadding: 1.5em;
+@verticalPadding: 1.21em;
+@horizontalPadding: 2.14em;
 @padding: @verticalPadding @horizontalPadding;
-@background: #F8F8F9;
+@background: #f2f2f2;
 @lineHeightOffset: ((@lineHeight - 1em) / 2);
 
-@borderRadius: @defaultBorderRadius;
+@borderRadius:0.65rem;
 @borderWidth: 1px;
 @borderShadow: 0px 0px 0px @borderWidth @strongBorderColor inset;
 @shadowShadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -32,7 +32,7 @@
 ;
 
 /* Header */
-@headerFontSize: @relativeLarge;
+@headerFontSize: 1.07rem;
 @headerFontWeight: bold;
 @headerDisplay: block;
 @headerDistance: 0rem;
